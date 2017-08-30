@@ -9,6 +9,7 @@ public class enemySpereScript : MonoBehaviour {
 	private float nextTimeForShoot = 0;
 	public GameObject [] proyectileList;
 
+	public int rotation = 0;
 
 
 	// Use this for initialization
@@ -26,7 +27,18 @@ public class enemySpereScript : MonoBehaviour {
 
 			Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * 1)),this.transform.rotation);
 
+			GameObject shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * -1)),this.transform.rotation);
+			shoot.transform.Rotate (new Vector3 (0, 180, 0));
 
+			shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.right * 1)),this.transform.rotation);
+			shoot.transform.Rotate (new Vector3 (0, 90, 0));
+
+			shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.right * -1)),this.transform.rotation);
+			shoot.transform.Rotate (new Vector3 (0, -90, 0));
+
+			//Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * -1)), this.transform.rotation.eulerAngles + 180f * Vector3.up );
+
+			this.transform.Rotate (new Vector3 (0, rotation, 0));
 		}
 
 	

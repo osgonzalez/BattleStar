@@ -20,19 +20,20 @@ public class ProyectileScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
 
 	private void OnCollisionEnter(Collision collision)
 	{
 		liveScript script = collision.gameObject.GetComponent<liveScript>();
 		if (collision.gameObject.tag == "Player") {
-			levelmainScript main = (GameObject.FindGameObjectWithTag ("Main")).GetComponent<levelmainScript> ();
-			main.getDamage (damage);
-			Destroy (this.gameObject,0.1);
+			levelmainScript main = (GameObject.FindGameObjectWithTag ("Main")).GetComponent<levelmainScript>();
+			main.doDamage(10);
+			Destroy(this.gameObject,0.1f);
 		
 		} else {
-			Destroy (this.gameObject);
+			Debug.Log (collision.gameObject.name);
+			Destroy(this.gameObject);
 		}
 
 	}

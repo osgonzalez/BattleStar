@@ -624,6 +624,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114252246008658398, guid: deb61f50eba7f224aabb9dd808ba752f,
+        type: 2}
+      propertyPath: rotation
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114252246008658398, guid: deb61f50eba7f224aabb9dd808ba752f,
+        type: 2}
+      propertyPath: shootCadence
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: deb61f50eba7f224aabb9dd808ba752f, type: 2}
   m_IsPrefabParent: 0

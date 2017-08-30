@@ -17,7 +17,7 @@ public class levelmainScript : MonoBehaviour {
 		
 	}
 
-	void getDamage(int damage){
+	public void doDamage(int damage){
 		playerLife -= damage;
 		if (playerLife <= 0) {
 			failLevel ();
