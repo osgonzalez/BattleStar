@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shoot
+  - ColorType0
+  - ColorType1
+  - ColorType2
+  - ColorType3
+  - ColorType4
+  - Main
   layers:
   - Default
   - TransparentFX

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 135798433166586684}
   - component: {fileID: 23915177406218810}
   - component: {fileID: 54886588199628482}
-  - component: {fileID: 114812642436319938}
+  - component: {fileID: 114252246008658398}
   - component: {fileID: 114519369355157462}
   m_Layer: 0
   m_Name: EnemySpere
@@ -97,8 +97,26 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
+--- !u!114 &114252246008658398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1688309473981208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ed0766604044a4e8c541b4e46e22d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootCadence: 0.5
+  proyectileList:
+  - {fileID: 1519408676632612, guid: 40a26b54c46cd0d48bf5cdb32093f6a7, type: 2}
+  - {fileID: 1384831705783038, guid: 80ce65ec0302e404bbc58db5d0af50e6, type: 2}
+  - {fileID: 1441984380532064, guid: 5200afab4ec6eed408b05a523a29ed13, type: 2}
+  - {fileID: 1976158267486964, guid: 398bdce708d47334e9ff53a770ca9846, type: 2}
+  - {fileID: 1242458453884804, guid: 1c928cc90f6da834eb2d8601f08eaa15, type: 2}
 --- !u!114 &114519369355157462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -111,17 +129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 100
---- !u!114 &114812642436319938
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1688309473981208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edeaca8d7c4a3464ea2956552f989326, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &135798433166586684
 SphereCollider:
   m_ObjectHideFlags: 1

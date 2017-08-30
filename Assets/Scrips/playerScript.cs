@@ -16,9 +16,16 @@ public class playerScript : MonoBehaviour {
     private float nextTimeForShoot = 0;
     private Renderer render;
 
+	private Color [] colorList;
+
   
     // Use this for initialization
     void Start () {
+		colorList = new Color[]{
+								new Color(200,200,200),
+								new Color(255,0,0),
+								new Color(0,255,0),
+								new Color(0, 0, 255)};
         rb = this.GetComponent<Rigidbody>();
         render = this.GetComponent<Renderer>();
         rb.freezeRotation = true;
@@ -29,12 +36,12 @@ public class playerScript : MonoBehaviour {
 
         //ColorChange
 
-        if (Time.time > nextTimeChangeColor)
+        /*if (Time.time > nextTimeChangeColor)
         {
             nextTimeChangeColor = Time.time + timeToChangeColor;
             render.material.color = new Color(Random.value, Random.value, Random.value);
         }
-
+		*/
         //movement
 
         float movHor= Input.GetAxis("Horizontal");
@@ -53,10 +60,37 @@ public class playerScript : MonoBehaviour {
         {
             rb.rotation = Quaternion.Euler((rb.rotation.eulerAngles + new Vector3(0, rotateSpeed, 0)));
         }
+
         if (Input.GetKey("k"))
         {
             rb.rotation = Quaternion.Euler((rb.rotation.eulerAngles + new Vector3(0, -rotateSpeed, 0)));
         }
+
+		if (Input.GetKey("1") && Time.time > nextTimeChangeColor)
+		{
+			render.material.color = colorList[1];
+			nextTimeChangeColor = Time.time + timeToChangeColor;
+			Debug.Log (render.material.color.ToString ());
+		}
+		if (Input.GetKey("2") && Time.time > nextTimeChangeColor)
+		{
+			render.material.color = colorList[2];
+			nextTimeChangeColor = Time.time + timeToChangeColor;
+			Debug.Log (render.material.color.ToString ());
+		}
+		if (Input.GetKey("3") && Time.time > nextTimeChangeColor)
+		{
+			render.material.color = colorList[3];
+			nextTimeChangeColor = Time.time + timeToChangeColor;
+			Debug.Log (render.material.color.ToString ());
+		}
+		if (Input.GetKey("4") && Time.time > nextTimeChangeColor)
+		{
+			render.material.color = colorList[0];
+			nextTimeChangeColor = Time.time + timeToChangeColor;
+			Debug.Log (render.material.color.ToString ());
+		}
+
         if (Input.GetKey("space") && nextTimeForShoot<Time.time)
         {
             nextTimeForShoot = Time.time + shootCadence;
