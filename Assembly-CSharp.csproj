@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scrips\ProyectileScript.cs" />
      <Compile Include="Assets\Scrips\ShootScript.cs" />
      <Compile Include="Assets\Scrips\spawnTriggerScript.cs" />
+     <Compile Include="Assets\Scrips\wallScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

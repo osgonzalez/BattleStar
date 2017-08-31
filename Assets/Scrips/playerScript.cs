@@ -97,7 +97,7 @@ public class playerScript : MonoBehaviour {
             
             Instantiate(shoot, (this.transform.position + (this.transform.forward * 1)),this.transform.rotation);
 
-            Debug.Log("shooting");
+         
            
         }
 

@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawnScript : MonoBehaviour {
-	public float time=1f;
+
 	public GameObject spawnObject;
 	public GameObject spawnEffect;
 	public float timeOfSpawnEffect = 0f;
 	public float waitTimeForSpawn = 0f;
+	public GameObject wall;
+
+	private liveScript lScript;		//Created gloval variable for memory eficience in case of multiple spawn.
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,10 +22,6 @@ public class EnemySpawnScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (time < Time.time) {
-			time = Time.time + 2f;
-			Debug.Log (this.gameObject.name + "   " + this.transform.position);
-		}
 	}
 
 	public void spawn(){
@@ -39,9 +40,13 @@ public class EnemySpawnScript : MonoBehaviour {
 			Instantiate (spawnEffect,this.transform.position,Quaternion.identity);
 			yield return new WaitForSeconds (timeOfSpawnEffect);
 		}
-		Debug.Log (this.transform.position);
-		Instantiate (spawnObject,this.transform.position,Quaternion.identity);
 
+		GameObject obj = Instantiate (spawnObject,this.transform.position,Quaternion.identity);
+
+		if (wall != null) {
+			lScript = obj.GetComponent<liveScript> ();
+			lScript.setWall (wall);
+		}
 	}
 
 
