@@ -54,12 +54,14 @@
      <Compile Include="Assets\Scrips\cameraScript.cs" />
      <Compile Include="Assets\Scrips\controlerScript.cs" />
      <Compile Include="Assets\Scrips\EnemyScript.cs" />
+     <Compile Include="Assets\Scrips\EnemySpawnScript.cs" />
      <Compile Include="Assets\Scrips\enemySpereScript.cs" />
      <Compile Include="Assets\Scrips\levelmainScript.cs" />
      <Compile Include="Assets\Scrips\liveScript.cs" />
      <Compile Include="Assets\Scrips\playerScript.cs" />
      <Compile Include="Assets\Scrips\ProyectileScript.cs" />
      <Compile Include="Assets\Scrips\ShootScript.cs" />
+     <Compile Include="Assets\Scrips\spawnTriggerScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

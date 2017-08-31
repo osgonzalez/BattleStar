@@ -32,7 +32,6 @@ public class ProyectileScript : MonoBehaviour {
 			Destroy(this.gameObject,0.1f);
 		
 		} else {
-			Debug.Log (collision.gameObject.name);
 			Destroy(this.gameObject);
 		}
 
