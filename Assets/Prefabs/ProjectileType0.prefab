@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23847645693725588}
   - component: {fileID: 114117972664707826}
   - component: {fileID: 54963116090753026}
+  - component: {fileID: 114823806342793658}
   m_Layer: 0
   m_Name: ProjectileType0
   m_TagString: ColorType0
@@ -111,6 +112,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootVelocity: 600
   damage: 10
+--- !u!114 &114823806342793658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519408676632612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f71d28356872b41a43d18fb88365e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10
+  colorType: 0
+  wall: {fileID: 0}
 --- !u!135 &135518905152363692
 SphereCollider:
   m_ObjectHideFlags: 1

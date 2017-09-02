@@ -5,6 +5,7 @@ using UnityEngine;
 public class liveScript : MonoBehaviour {
 
     public int life = 100;
+	public int colorType =0;
 	public GameObject wall;
 	private wallScript wScript;
 	private bool wallIsNotSeted = true;

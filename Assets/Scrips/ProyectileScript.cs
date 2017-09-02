@@ -32,7 +32,12 @@ public class ProyectileScript : MonoBehaviour {
 			Destroy(this.gameObject,0.1f);
 		
 		} else {
-			Destroy(this.gameObject);
+			if (collision.gameObject.tag== "Shoot") {
+				
+				
+			} else {
+				Destroy (this.gameObject);
+			}
 		}
 
 	}
