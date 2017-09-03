@@ -6,9 +6,11 @@ public class liveScript : MonoBehaviour {
 
     public int life = 100;
 	public int colorType =0;
+	public int score = 0; 
 	public GameObject wall;
 	private wallScript wScript;
 	private bool wallIsNotSeted = true;
+	private levelmainScript main; 
 
     // Use this for initialization
     void Start () {
@@ -41,6 +43,10 @@ public class liveScript : MonoBehaviour {
         this.life -= damage;
         if (life <= 0)
         {
+			if (score > 0) {
+				main = GameObject.FindGameObjectWithTag ("Main").GetComponent<levelmainScript>();
+				main.addScore (score);
+			}
 			if (wall != null) {
 				wScript.removeEnemyForOpen ();
 			}

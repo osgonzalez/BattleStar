@@ -505,7 +505,7 @@ MonoBehaviour:
   rotateSpeed: 6
   timeToChangeColor: 2
   shoot: {fileID: 1212357967931800, guid: 68304d1efc0a28d4d8ba84c8d3764b8e, type: 2}
-  shootDurationTime: 1.7
+  shootDurationTime: 2
   shootCadence: 0.1
   shootBase: {fileID: 1211405759834630}
 --- !u!124 &124920749029845676
