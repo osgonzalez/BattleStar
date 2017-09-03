@@ -10,7 +10,7 @@ public class ShootScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Rigidbody rb = this.GetComponent<Rigidbody>();
-        rb.AddForce(this.transform.forward * shootVelocity);
+        rb.AddForce(this.transform.up * shootVelocity);
 
     }
 	

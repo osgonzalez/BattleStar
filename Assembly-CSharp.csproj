@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Particles\Scripts\randomParticleRotation.cs" />
      <Compile Include="Assets\Scrips\cameraScript.cs" />
      <Compile Include="Assets\Scrips\controlerScript.cs" />
      <Compile Include="Assets\Scrips\EnemyScript.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\Scrips\ShootScript.cs" />
      <Compile Include="Assets\Scrips\spawnTriggerScript.cs" />
      <Compile Include="Assets\Scrips\wallScript.cs" />
+     <None Include="Assets\Particles\Shaders\Particle Alpha Blend HDR.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -101,8 +101,8 @@ Transform:
   - {fileID: 470666}
   - {fileID: 461822}
   - {fileID: 421206}
-  - {fileID: 4042725640496478}
   - {fileID: 4305573161438812}
+  - {fileID: 4042725640496478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -390,7 +390,7 @@ Transform:
   m_LocalScale: {x: 5.882353, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 404718}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 70, y: 0, z: 0}
 --- !u!4 &4305573161438812
 Transform:
@@ -403,7 +403,7 @@ Transform:
   m_LocalScale: {x: 5.882353, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 404718}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!20 &20538520665171260
 Camera:
@@ -505,6 +505,7 @@ MonoBehaviour:
   rotateSpeed: 6
   timeToChangeColor: 2
   shoot: {fileID: 1212357967931800, guid: 68304d1efc0a28d4d8ba84c8d3764b8e, type: 2}
+  shootDurationTime: 1.7
   shootCadence: 0.1
   shootBase: {fileID: 1211405759834630}
 --- !u!124 &124920749029845676

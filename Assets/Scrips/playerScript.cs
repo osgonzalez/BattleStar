@@ -12,11 +12,13 @@ public class playerScript : MonoBehaviour {
     private float nextTimeChangeColor = 0;
 
     public GameObject shoot;
+	public float shootDurationTime = 1.7f;
     public float shootCadence = 0.5f;
     private float nextTimeForShoot = 0;
     private Renderer render;
 
 	private Color [] colorList;
+	private GameObject shootInstance;		//Gloval variable for memory eficicence
 
 	public GameObject shootBase;
   
@@ -96,8 +98,8 @@ public class playerScript : MonoBehaviour {
         {
             nextTimeForShoot = Time.time + shootCadence;
             
-			Instantiate(shoot, (shootBase.transform.position + (this.transform.forward * 1)),this.transform.rotation);
-
+			shootInstance = Instantiate(shoot, (shootBase.transform.position + (this.transform.forward * 1)),shootBase.transform.rotation);
+			Destroy (shootInstance, shootDurationTime);
          
            
         }

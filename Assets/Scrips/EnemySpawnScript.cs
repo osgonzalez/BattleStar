@@ -6,12 +6,14 @@ public class EnemySpawnScript : MonoBehaviour {
 
 	public GameObject spawnObject;
 	public GameObject spawnEffect;
-	public float timeOfSpawnEffect = 0f;
-	public float waitTimeForSpawn = 0f;
+	public float waitTimeForFirstSpawn = 0f;
+	public float DurationOfSpawnEffect = 2f;
+	public float waitTimeForSpawnObject = 0f;
+
 	public GameObject wall;
 
 	private liveScript lScript;		//Created gloval variable for memory eficience in case of multiple spawn.
-
+	private GameObject spawnEffectInstance;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +28,7 @@ public class EnemySpawnScript : MonoBehaviour {
 
 	public void spawn(){
 
-		if (waitTimeForSpawn == 0) {
+		if (waitTimeForFirstSpawn == 0) {
 			StartCoroutine ("instanciateObjects");
 		} else {
 			StartCoroutine ("waitforSpawn");
@@ -37,8 +39,11 @@ public class EnemySpawnScript : MonoBehaviour {
 
 	IEnumerator instanciateObjects(){
 		if (spawnEffect != null) {		
-			Instantiate (spawnEffect,this.transform.position,Quaternion.identity);
-			yield return new WaitForSeconds (timeOfSpawnEffect);
+			spawnEffectInstance = Instantiate (spawnEffect,this.transform.position,Quaternion.identity);
+			Debug.Log(this.transform.position);
+			Debug.Log(spawnEffectInstance.transform.position);
+			Destroy (spawnEffectInstance, DurationOfSpawnEffect);
+			yield return new WaitForSeconds (waitTimeForSpawnObject);
 		}
 
 		GameObject obj = Instantiate (spawnObject,this.transform.position,Quaternion.identity);
@@ -51,7 +56,7 @@ public class EnemySpawnScript : MonoBehaviour {
 
 
 	IEnumerator waitforSpawn(){
-		yield return new WaitForSeconds (waitTimeForSpawn);
+		yield return new WaitForSeconds (waitTimeForFirstSpawn);
 		StartCoroutine ("instanciateObjects");
 	
 	}
