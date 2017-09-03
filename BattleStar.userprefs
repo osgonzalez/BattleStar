@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrips\ProyectileScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scrips\EnemyScript.cs">
     <Files>
-      <File FileName="Assets\Scrips\playerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scrips\playerScript.cs" Line="99" Column="82" />
       <File FileName="Assets\Scrips\EnemyScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrips\liveScript.cs" Line="40" Column="6" />
+      <File FileName="Assets\Scrips\liveScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scrips\enemySpereScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scrips\ShootScript.cs" Line="23" Column="6" />
-      <File FileName="Assets\Scrips\ProyectileScript.cs" Line="35" Column="42" />
+      <File FileName="Assets\Scrips\ShootScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scrips\ProyectileScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scrips\levelmainScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scrips\spawnTriggerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scrips\EnemySpawnScript.cs" Line="1" Column="1" />

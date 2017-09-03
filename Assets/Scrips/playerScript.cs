@@ -18,6 +18,7 @@ public class playerScript : MonoBehaviour {
 
 	private Color [] colorList;
 
+	public GameObject shootBase;
   
     // Use this for initialization
     void Start () {
@@ -95,7 +96,7 @@ public class playerScript : MonoBehaviour {
         {
             nextTimeForShoot = Time.time + shootCadence;
             
-            Instantiate(shoot, (this.transform.position + (this.transform.forward * 1)),this.transform.rotation);
+			Instantiate(shoot, (shootBase.transform.position + (this.transform.forward * 1)),this.transform.rotation);
 
          
            
