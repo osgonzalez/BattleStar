@@ -54,6 +54,7 @@
      <Compile Include="Assets\Particles\Scripts\randomParticleRotation.cs" />
      <Compile Include="Assets\Scrips\cameraScript.cs" />
      <Compile Include="Assets\Scrips\controlerScript.cs" />
+     <Compile Include="Assets\Scrips\EndLevelScript.cs" />
      <Compile Include="Assets\Scrips\EnemyScript.cs" />
      <Compile Include="Assets\Scrips\EnemySpawnScript.cs" />
      <Compile Include="Assets\Scrips\enemySpereScript.cs" />

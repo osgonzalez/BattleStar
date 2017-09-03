@@ -36,6 +36,7 @@ public class levelmainScript : MonoBehaviour {
 		lifeText.text = lifeTextMessage + playerLife + "/" + originalLife;
 	}
 
+
 	public void restartLevel(){
 		Time.timeScale = 1;
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
@@ -45,6 +46,10 @@ public class levelmainScript : MonoBehaviour {
 		defeatButton.gameObject.SetActive (true);
 		Time.timeScale = 0;
 		
+	}
+
+	public void endLevel(){
+		Debug.Log ("Temp. End Level");
 	}
 
 }
