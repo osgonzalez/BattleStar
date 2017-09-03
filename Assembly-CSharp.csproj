@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scrips\cameraScript.cs" />
      <Compile Include="Assets\Scrips\controlerScript.cs" />
      <Compile Include="Assets\Scrips\EndLevelScript.cs" />
+     <Compile Include="Assets\Scrips\EnemyExplosibeCapsuleScript.cs" />
      <Compile Include="Assets\Scrips\EnemyScript.cs" />
      <Compile Include="Assets\Scrips\EnemySniperScript.cs" />
      <Compile Include="Assets\Scrips\EnemySpawnScript.cs" />

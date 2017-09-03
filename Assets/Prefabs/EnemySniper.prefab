@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 100
   colorType: 0
-  score: 50
+  score: 25
   wall: {fileID: 0}
 --- !u!135 &135246334809339740
 SphereCollider:
