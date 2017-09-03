@@ -61,6 +61,16 @@ public class levelmainScript : MonoBehaviour {
 		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
 	}
 
+	public void backToMenu(){
+		Time.timeScale = 1;
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);		//toDo
+	}
+
+	public void nextLevel(){
+		Time.timeScale = 1;
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);		//toDo
+	}
+
 	void failLevel(){
 		defeatText.gameObject.SetActive (true);
 		resetLevelButton.gameObject.SetActive (true);
@@ -75,5 +85,7 @@ public class levelmainScript : MonoBehaviour {
 		backToMenuButton.gameObject.SetActive (true);
 		nextLevelButton.gameObject.SetActive (true);
 	}
+
+
 
 }

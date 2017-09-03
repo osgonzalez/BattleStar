@@ -8,6 +8,7 @@ public class enemySpereScript : MonoBehaviour {
 	public float shootCadence = 0.5f;
 	private float nextTimeForShoot = 0;
 	public GameObject [] proyectileList;
+	private GameObject shoot;						//Global variable for memory eficience
 
 	public int rotation = 0;
 
@@ -27,7 +28,7 @@ public class enemySpereScript : MonoBehaviour {
 
 			Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * 1)),this.transform.rotation);
 
-			GameObject shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * -1)),this.transform.rotation);
+			shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.forward * -1)),this.transform.rotation);
 			shoot.transform.Rotate (new Vector3 (0, 180, 0));
 
 			shoot = Instantiate(proyectileList[Random.Range(0,proyectileList.Length-1)], (this.transform.position + (this.transform.right * 1)),this.transform.rotation);
